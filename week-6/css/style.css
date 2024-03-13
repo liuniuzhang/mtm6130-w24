@@ -44,9 +44,7 @@ nav ul li a:visited{
     box-shadow: -2px 2px 4px 2px rgb(143, 122, 67);
 }
 
-nav ul li a:hover {
-       color: beige;
-}
+nav ul li a:hover
 nav ul li a:focus{
     background-color: rgb(73, 66, 66);
 
@@ -113,9 +111,21 @@ dd ol li:nth-child(3n + 1){
 
 }
 
+.submit-buttom{
+/* top + buttom + left + right */
+    /* padding: 20px; */
+    /* top + buttom left+right */
+    padding: 10px 20px;
+    margin: 30px 0;
+/* top right+left  bottom */
+    /* padding: 30px 10px 5px; */
+
+/* top right bottom left */
+    /* padding: 10px 20px 10px 20px; */
+}
 .footer{
     background-color: rgb(212, 227, 238);
-    background-image: url(../images/flowers.png);
+    background-image: url(../image/flowers.png);
     padding: 30px 40px;
 }
 
