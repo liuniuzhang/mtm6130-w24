@@ -100,6 +100,7 @@ section{
 /* ------------------------------Header---------------------------------- */
 header{
     text-align: center;
+    margin-bottom: 80px;
 }
 .mobile-logo{
     width: 100px;
@@ -127,6 +128,24 @@ header{
     /* use it when you want to make something truely center */
     transform: translate(-50%, -50%);
 
+}
+.nav-list{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nav-list li a{
+    border-bottom: 1px solid grey;
+}
+.nav-list li a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 0;
+}
+.nav-list li a.active{
+    color:aqua;
 }
 
 
@@ -193,6 +212,24 @@ header{
         display: flex;
         flex-direction: column;
     }
+    .app-section .description{
+        display: flex;
+        flex-direction: column;
+
+    }
+ 
+     .nav-list{
+        display: row;
+        }
+
+    .nav-list li{
+    border-bottom: none;
+    border-bottom: 1px solid grey;
+    flex-grow: 1;
+    }
+
+
+    
 }
 
 
