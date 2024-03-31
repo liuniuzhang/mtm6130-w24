@@ -77,6 +77,11 @@ p{
     margin: 14px 0;
 }
 
+i.fa-solid {
+   color: #00ADDB;
+   font-size: 30px;
+}
+
 a, a:visited {
     color: inherit;
 }
@@ -147,7 +152,23 @@ header{
 .nav-list li a.active{
     color:aqua;
 }
+/* ----------Action Section--------- */
+.actions-section img {
+    max-width: 100px;
+ }
+ .action-item{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid lightblue;
+    align-items: center;
+    padding: 20px;
+ }
+ .actions {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
 
+ }
 
 
 /* -----------------App Section---------------- */
@@ -158,6 +179,37 @@ header{
     border: 1px solid grey;
     /* for the round corner */
     border-radius:6px;
+}
+
+ /* News Section */
+ .news-section .map iframe{
+    width: 100%;
+    height: 450px;
+ }
+
+ .news-content {
+    display: flex;
+    flex-direction: column;
+
+ }
+
+ /* ------newsletter section---- */
+
+ .newsletter-section{
+    font-family: ;
+    text-align: center;
+    background-image: url("../images/mobile-banner.jpg") ;
+    padding: 40px 20px;
+ }
+ 
+
+ /* --footer--- */
+footer{
+    padding: 20px 0;
+    border-top: 2px solid #00ADDB;
+}
+.copyright{
+    float: right;
 }
 
 
@@ -227,12 +279,7 @@ header{
     border-bottom: 1px solid grey;
     flex-grow: 1;
     }
-
-
     
-}
-
-
 /* -----------footer--------------- */
 
 footer{
@@ -241,4 +288,48 @@ footer{
 }
 .copyright{
     float: right;
+}
+/* ----------Action Section--------- */
+ .action-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }
+ .action-item img{
+    margin-right: 20px;
+
+ }
+ .actions {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+ }
+/* do not add space between "action-item and four" cuz it is the child elements */
+.actions .action-item.five{
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+
+ }
+.actions .action-item.six{
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+
+ }
+ /* News Section */
+ .news-section .map iframe{
+    width: 600px;
+    height: 450px;
+ }
+
+ .news-content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+
+ }
+
+
 }
